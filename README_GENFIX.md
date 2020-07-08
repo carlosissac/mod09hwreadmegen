@@ -1,5 +1,5 @@
-# Project Readme Generator - Open Source ("ProjectID:1594219453231")
-![GitHub last commit](https://img.shields.io/github/last-commit/carlosissac/mod09hwreadmegen) https://img.shields.io/twitter/follow/zzzakk_cccrlss?style=social[GitHub code size](https://img.shields.io/github/languages/code-size/carlosissac/mod09hwreadmegen) https://img.shields.io/github/watchers/carlosissac/mod09hwreadmegen?style=social 
+# Project Readme Generator - Open Source ("ProjectID:1594220092254")
+![GitHub last commit](https://img.shields.io/github/last-commit/carlosissac/mod09hwreadmegen) ![Twitter Follow](https://img.shields.io/twitter/follow/zzzakk_cccrlss?style=social) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/carlosissac/mod09hwreadmegen) ![GitHub followers](https://img.shields.io/github/followers/carlosissac?style=social) 
 ## Description
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ## Snapshot

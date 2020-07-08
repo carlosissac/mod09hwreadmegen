@@ -72,9 +72,9 @@ const rmTitle = `# Project Readme Generator - Open Source ("ProjectID:${ifix.get
 ifix.setProperty('title',rmTitle);
 
 const rmBadges = [`![GitHub last commit](https://img.shields.io/github/last-commit/carlosissac/mod09hwreadmegen) `,
-`https://img.shields.io/twitter/follow/zzzakk_cccrlss?style=social `,
-`[GitHub code size](https://img.shields.io/github/languages/code-size/carlosissac/mod09hwreadmegen) `,
-`https://img.shields.io/github/watchers/carlosissac/mod09hwreadmegen?style=social `
+`![Twitter Follow](https://img.shields.io/twitter/follow/zzzakk_cccrlss?style=social) `,
+`![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/carlosissac/mod09hwreadmegen) `,
+`![GitHub followers](https://img.shields.io/github/followers/carlosissac?style=social) `
 ];
 ifix.setProperty('badges',rmBadges);
 
