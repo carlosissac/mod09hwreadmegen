@@ -6,7 +6,7 @@ class InputFixed extends ReadMe {
     
     async kickoff() {
         let bundle = [];
-        for(let i=0; i<9; i++) {
+        for(let i=0; i<10; i++) {
             if(i === 0) {
                 let promise = await Promise.all([this.fileClear(this.filepath)]);
                 console.log(promise);
@@ -55,6 +55,13 @@ class InputFixed extends ReadMe {
                     console.log(promise);    
                 }
             }
+            else if (i === 9) {
+                const tests = this.getProperty(`tests`);
+                for(let m=0; m<tests.length; m++) {
+                    let promise = await Promise.all([this.fileAppend(this.filepath, tests[m], `test`)]);
+                    console.log(promise);    
+                }
+            }
         }
     }
 }
@@ -79,12 +86,13 @@ ifix.setProperty('snapshot',rmSnapshot);
 
 const rmTableOfContents = [
     `## Table Of Contents\n`, 
-    `* [App Snapshot](#app-snapshot)\n`,
-    `* [Installation](#installation)\n`,
-    `* [Tests](#tests)\n`,
-    `* [License](#license)\n`,
-    `* [Contributing](#contributing)\n`,
-    `* [Questions](#questions)\n`
+    `* [Description](#Description)\n`,
+    `* [Snapshot](#Snapshot)\n`,
+    `* [Tests](#Tests)\n`,
+    `* [License](#License)\n`,
+    `* [Contributing](#Contributing)\n`,
+    `* [Questions](#Questions)\n`,
+    `* [Tests](#Tests)\n`,
 ];
 ifix.setProperty('tableofcontents',rmTableOfContents);
 
@@ -112,5 +120,16 @@ const rmQuestions = [
     `* Frage 3?\n`
 ];
 ifix.setProperty('questions',rmQuestions);
+
+const rmTests = [
+    `## Tests\n`,
+    `* Prueba 1\n`,
+    `* Teste 2\n`,
+    `* Prüfung 3\n`,
+    `* Próf 4\n`,
+    `* тест 5\n`
+];
+ifix.setProperty('tests',rmTests);
+
 
 module.exports.start = ifix.kickoff();

@@ -6,15 +6,13 @@ const appendFile = promisify(fs.appendFile);
 class ReadMe {
         title = ``;
         badges = [];
-        snapshot = ``;
         description = ``;
+        snapshot = ``;
         tableofcontents = [];
-        installation = ``;
-        tests = [];
-        license = 0;
-        license_cat = [];
+        license = ``;
         contributing = ``;
         questions = [];
+        tests = [];
 
     constructor (id) {
         this.id = id;
