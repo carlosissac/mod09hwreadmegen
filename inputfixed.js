@@ -72,8 +72,8 @@ const rmTitle = `# Project Readme Generator - Open Source ("ProjectID:${ifix.get
 ifix.setProperty('title',rmTitle);
 
 const rmBadges = [`![GitHub last commit](https://img.shields.io/github/last-commit/carlosissac/mod09hwreadmegen) `,
-`![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fzzzakk_cccrlss) `,
-`https://img.shields.io/github/license/carlosissac/mod09hwreadmegen `,
+`https://img.shields.io/twitter/follow/zzzakk_cccrlss?style=social`,
+`https://img.shields.io/github/languages/code-size/carlosissac/mod09hwreadmegen `,
 `https://img.shields.io/github/watchers/carlosissac/mod09hwreadmegen?style=social `
 ];
 ifix.setProperty('badges',rmBadges);
@@ -88,7 +88,6 @@ const rmTableOfContents = [
     `## Table Of Contents\n`, 
     `* [Description](#Description)\n`,
     `* [Snapshot](#Snapshot)\n`,
-    `* [Tests](#Tests)\n`,
     `* [License](#License)\n`,
     `* [Contributing](#Contributing)\n`,
     `* [Questions](#Questions)\n`,
@@ -130,6 +129,5 @@ const rmTests = [
     `* тест 5\n`
 ];
 ifix.setProperty('tests',rmTests);
-
 
 module.exports.start = ifix.kickoff();
