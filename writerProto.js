@@ -54,13 +54,6 @@ WriterProto.prototype.documentBuilder = async function() {
             let promise = await Promise.all([this.fileAppend(this.filepath, this.getProperty(`installation`), `installation`)])
             console.log(promise)
         }
-        else if (i === 8) {
-            const questions = this.getProperty(`questions`)
-            for(let l=0; l<questions.length; l++) {
-                let promise = await Promise.all([this.fileAppend(this.filepath, questions[l], `question`)])
-                console.log(promise)
-            }
-        }
         else if (i === 9) {
             const tests = this.getProperty(`tests`)
             for(let m=0; m<tests.length; m++) {

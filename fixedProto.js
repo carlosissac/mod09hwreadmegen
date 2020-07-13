@@ -1,5 +1,6 @@
 const { WriterProto } = require('./writerProto')
 const moment = require('moment')
+const colors = require('colors')
 
 const FixedProto = function(id, filepath, type) {
     WriterProto.call(this, id, filepath, type)
@@ -13,7 +14,7 @@ FixedProto.prototype.getType = function() {
 }
 
 iproto = new FixedProto(Number(moment().format('x')),`README_GENFIX.md`,`Fixed`)
-console.log(`ProjectID ${iproto.getId()} :: InputType ${iproto.getType()}`)
+console.log(`ProjectID ${iproto.getId()} :: InputType ${iproto.getType()}`.yellow)
 
 const title = `# Project Readme Generator - Open Source ("ProjectID:${iproto.getId()}")\n`
 iproto.setProperty(`title`, title)
@@ -40,7 +41,6 @@ const tableofcontents = [
     `* [Usage](#Usage)\n`,
     `* [License](#License)\n`,
     `* [Installation](#Installation)\n`,
-    `* [Questions](#Questions)\n`,
     `* [Tests](#Tests)\n`,
     `* [Credits](#Credits)\n`,
 ]
@@ -51,14 +51,6 @@ iproto.setProperty(`license`, license)
 
 const installation = `## Installation\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n`
 iproto.setProperty(`installation`, installation)
-
-const questions = [
-    `## Questions\n`,
-    `* Pregunta 1?\n`,
-    `* Questão 2?\n`,
-    `* Frage 3?\n`
-]
-iproto.setProperty(`questions`, questions)
 
 const tests = [
     `## Tests\n`,

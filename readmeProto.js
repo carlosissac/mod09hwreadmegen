@@ -13,7 +13,7 @@ const ReadMeProto = function (id) {
     this.tableofcontents = []
     this.license = ``
     this.installation = ``
-    this.questions = []
+    //this.questions = []
     this.tests = []
     this.credits = []
 }
