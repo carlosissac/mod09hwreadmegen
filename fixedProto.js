@@ -22,7 +22,8 @@ iproto.setProperty(`title`, title)
 const badges = [`![GitHub last commit](https://img.shields.io/github/last-commit/carlosissac/mod09hwreadmegen) `,
 `![Twitter Follow](https://img.shields.io/twitter/follow/zzzakk_cccrlss?style=social) `,
 `![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/carlosissac/mod09hwreadmegen) `,
-`![GitHub followers](https://img.shields.io/github/followers/carlosissac?style=social) `
+`![GitHub followers](https://img.shields.io/github/followers/carlosissac?style=social) `,
+`[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md) `
 ];
 iproto.setProperty(`badges`, badges)
 
@@ -43,6 +44,7 @@ const tableofcontents = [
     `* [Installation](#Installation)\n`,
     `* [Tests](#Tests)\n`,
     `* [Credits](#Credits)\n`,
+    `* [Contributing](#Contributing)\n`,
 ]
 iproto.setProperty(`tableofcontents`, tableofcontents)
 
@@ -71,6 +73,9 @@ const credits = [
     `* человек 5\n`
 ];
 iproto.setProperty(`credits`, credits)
+
+const contributing = `## Contributing\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n`
+iproto.setProperty(`contributing`, contributing)
 
 iproto.documentBuilder()
 

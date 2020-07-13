@@ -13,9 +13,10 @@ const ReadMeProto = function (id) {
     this.tableofcontents = []
     this.license = ``
     this.installation = ``
-    //this.questions = []
     this.tests = []
     this.credits = []
+    this.contributing = ``
+
 }
 
 ReadMeProto.prototype.getId = function() {
@@ -30,7 +31,7 @@ ReadMeProto.prototype.getProperty = function(targetProperty) {
     return this[targetProperty]
 }
 
-ReadMeProto.prototype.handleError = function() {
+ReadMeProto.prototype.handleError = function(error) {
     console.log(`File Write Error >>>> ${error}`)
 }
 

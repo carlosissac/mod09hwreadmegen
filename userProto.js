@@ -1,9 +1,8 @@
 const { WriterProto } = require('./writerProto')
-const { promisify } = require('util')
+//const { promisify } = require('util')
 const moment = require('moment')
 const inquirer = require('inquirer')
 const colors = require('colors')
-//const { table } = require('console')
 
 const UserProto = function(id, filepath, type) {
     WriterProto.call(this, id, filepath, type)
