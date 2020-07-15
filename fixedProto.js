@@ -51,7 +51,7 @@ iproto.setProperty(`tableofcontents`, tableofcontents)
 const license = `## License\nMIT\n`
 iproto.setProperty(`license`, license)
 
-const installation = `## Installation\n*Step 1.* Clone repo into your localhost.\n*Step 2.* Open Terminal and run "npm i --save" in order to install dependencies.\n`
+const installation = `## Installation\n*Step 1.* Clone repo into your localhost.\n\n*Step 2.* Open Terminal and run "npm i --save" in order to install dependencies.\n`
 iproto.setProperty(`installation`, installation)
 
 const tests = [
