@@ -51,14 +51,14 @@ iproto.setProperty(`tableofcontents`, tableofcontents)
 const license = `## License\nMIT\n`
 iproto.setProperty(`license`, license)
 
-const installation = `## Installation\n*Step 1.* Clone repo into your localhost.\n\n*Step 2.* Open Terminal and run "npm i --save" in order to install dependencies.\n\n*Step 3.* Write "node index.js"\n\n*Step 4.* Set "select_mode" to either true or false dependieng on the mode you want to run.\n`
+const installation = `## Installation\n*Step 1.* Clone repo into your localhost.\n\n*Step 2.* Open Terminal and run "npm i --save" in order to install dependencies.\n\n*Step 3.* Write "node index.js"\n\n*Step 4.* Set "select_mode" to either true or false depending on the mode you want to run.\n`
 iproto.setProperty(`installation`, installation)
 
 const tests = [
     `## Tests\nListed below are the testing procedures implemented for this effort.\n`,
     `* *Test 1.* _readmeProto.test.js and writerProto.test.js Unit Tests._\nTesting for these 2 modules were implemented using Jest unit testing tool library.\nTesting coverage is 100% for all functionality implemented in this module.\nDetails of testing coverage can be audited by looking into in the following file "./coverage/lcov-report/index.html"\n![image](./assets/jest.jpg)\n\n`,
     `* *Test 2.* _fixedProto.js Integration Test._\nModule was designed in order to smoke test the implementation of "writerProto.js and readmeProto.js" and to validate the markdown outcome of the readme document.\nValidation for this was not done using Jest.\nModule can be kicked off setting "select_mode = false" in index.js and subsequently doing a "node.js index.js" or using "node.js fixedProto.js" directly in terminal.\nReadMe file output from this file is located in "./README_GENFIX.md"\n\n`,
-    `* *Test 3.* _userProto.js User Acceptance Test._\nThis module contains the inquierer functionality implemented in order to caputure user input. Module was validated by user manually. ReadMe file output from this file is located in "./README_GENUSER.md"\n\n`,
+    `* *Test 3.* _userProto.js User Acceptance Test._\nThis module contains the inquirer functionality implemented in order to capture user input. Module was validated by user manually. ReadMe file output from this file is located in "./README_GENUSER.md"\n\n`,
     `* *Test 4.* _index.js. No testing was required for this module._\n`
 ];
 iproto.setProperty(`tests`, tests)
@@ -72,7 +72,7 @@ const credits = [
 ];
 iproto.setProperty(`credits`, credits)
 
-const contributing = `## Contributing\nIn order to contribute to this project please reach out to project admin at https://github.com/carlosissac in order to cofirm what open tasks could be assigned.\nThis project uses guidelines specified in https://www.contributor-covenant.org/.`
+const contributing = `## Contributing\nIn order to contribute to this project please reach out to project admin at https://github.com/carlosissac in order to confirm what open tasks could be assigned.\nThis project uses guidelines specified in https://www.contributor-covenant.org/.`
 iproto.setProperty(`contributing`, contributing)
 
 iproto.documentBuilder()

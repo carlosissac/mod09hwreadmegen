@@ -104,12 +104,13 @@ UserProto.prototype.validateEditor = function(text) {
     if (text !== ``) {
         let sp = text.split(`\n`)
         let spl = sp.length-1
-        if (spl < 2) {
+        return true
+        /*if (spl < 2) {
             console.log(` EDITOR :: MUST BE AT LEAST 2 LINES, TRY AGAIN`.brightRed)
         }
         else {
             return true
-        }
+        }*/
     }
     else {
         console.log(` EDITOR :: NO INPUT SUBMITTED, TRY AGAIN`.brightRed)
@@ -242,7 +243,4 @@ console.log(`ProjectID ${iproto.getId()} :: InputType ${iproto.getType()}`.green
 
 iproto.captureExec()
 
-//let test =  new UserProto(999,`ABC.md`)
-//console.log(test.getId())
-
-module.exports = { UserProto }
+module.exports.startUser = iproto
