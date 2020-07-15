@@ -51,7 +51,7 @@ iproto.setProperty(`tableofcontents`, tableofcontents)
 const license = `## License\nMIT\n`
 iproto.setProperty(`license`, license)
 
-const installation = `## Installation\n*Step 1.* Clone repo into your localhost.\n\n*Step 2.* Open Terminal and run "npm i --save" in order to install dependencies.\n`
+const installation = `## Installation\n*Step 1.* Clone repo into your localhost.\n\n*Step 2.* Open Terminal and run "npm i --save" in order to install dependencies.\n\n*Step 3.* Write "node index.js"\n\n*Step 4.* Set "select_mode" to either true or false dependieng on the mode you want to run.\n`
 iproto.setProperty(`installation`, installation)
 
 const tests = [
