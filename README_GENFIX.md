@@ -1,4 +1,4 @@
-# Project Readme Generator - Fixed Input - Open Source ("ProjectID:1594792707392")
+# Project Readme Generator - Fixed Input - Open Source ("ProjectID:1594793075897")
 ![GitHub last commit](https://img.shields.io/github/last-commit/carlosissac/mod09hwreadmegen) ![Twitter Follow](https://img.shields.io/twitter/follow/zzzakk_cccrlss?style=social) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/carlosissac/mod09hwreadmegen) ![GitHub followers](https://img.shields.io/github/followers/carlosissac?style=social) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md) 
 ## Description
 When creating an open source project on GitHub, it is important to have a quality README with information about the app--what is the app for, how to use the app, how to install it, how to report issues, and how to make contributions so that other developers are more likely to use and contribute to the success of the project. A command-line application will allow for quick and easy generation of a project README to get started quickly. This will allow a project creator to spend more time working on finishing the project and less time creating a good README.
@@ -18,7 +18,7 @@ Set "select_mode = true;" in order use User Mode and let the user submit custom 
 ## License
 MIT
 ## Installation
-*Step 1.* Clone repo into your localhost
+*Step 1.* Clone repo into your localhost.
 *Step 2.* Open Terminal and run "npm i --save" in order to install dependencies.
 ## Tests
 Listed below are the testing procedures implemented for this effort.
