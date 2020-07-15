@@ -46,7 +46,7 @@ UserProto.prototype.formatInput = function() {
     const description = `## Description\n${this.staticInput.description}`
     this.setProperty(`description`, description)
     
-    const usage = `## Usage\n${this.staticInput.usage})`
+    const usage = `## Usage\n${this.staticInput.usage}\n`
     this.setProperty(`usage`, usage)
 
     const snapshot = `![image](./assets/${this.staticInput.snapshot})\n`
@@ -58,6 +58,9 @@ UserProto.prototype.formatInput = function() {
     const installation = `## Installation\n${this.staticInput.installation}`
     this.setProperty(`installation`, installation)
 
+    const contributing = `## Contributing\n${this.staticInput.contributing}`
+    this.setProperty(`contributing`, contributing)
+
     let badges = []
     this.recursiveBadges.forEach((element) => {
         badges.push(`${element.badges} `)
@@ -67,21 +70,21 @@ UserProto.prototype.formatInput = function() {
     let tableofcontents = []
     tableofcontents.push(`## Table Of Contents\n`)
     this.recursiveTableOfContents.forEach((element) => {
-        tableofcontents.push(`${element.tableofcontents}\n`)
+        tableofcontents.push(`* [${element.tableofcontents}](#${element.tableofcontents})\n`)
     })
     this.setProperty(`tableofcontents`, tableofcontents)
 
     let tests = []
     tests.push(`## Tests\n`)
     this.recursiveTests.forEach((element) => {
-        tests.push(element.tests)
+        tests.push(`* ${element.tests}\n`)
     })
     this.setProperty(`tests`, tests)
 
     let credits = []
     tests.push(`## Credits\n`)
     this.recursiveCredits.forEach((element) => {
-        credits.push(element.credits)
+        credits.push(`* ${element.credits}\n`)
     })
     this.setProperty(`credits`, credits)
 
@@ -150,6 +153,12 @@ UserProto.prototype.getStaticInput = async function() {
             type: `editor`,
             name: `installation`,
             message: `INSTALLATION`.yellow,
+            validate : this.validateEditor
+        },
+        {
+            type: `editor`,
+            name: `contributing`,
+            message: `CONTRIBUTING`.yellow,
             validate : this.validateEditor
         }
     ])

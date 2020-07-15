@@ -16,7 +16,7 @@ FixedProto.prototype.getType = function() {
 iproto = new FixedProto(Number(moment().format('x')),`README_GENFIX.md`,`Fixed`)
 console.log(`ProjectID ${iproto.getId()} :: InputType ${iproto.getType()}`.yellow)
 
-const title = `# Project Readme Generator - Open Source ("ProjectID:${iproto.getId()}")\n`
+const title = `# Project Readme Generator - Fixed Input - Open Source ("ProjectID:${iproto.getId()}")\n`
 iproto.setProperty(`title`, title)
 
 const badges = [`![GitHub last commit](https://img.shields.io/github/last-commit/carlosissac/mod09hwreadmegen) `,
@@ -27,7 +27,7 @@ const badges = [`![GitHub last commit](https://img.shields.io/github/last-commit
 ];
 iproto.setProperty(`badges`, badges)
 
-const description = `## Description\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n`
+const description = `## Description\n\n`
 iproto.setProperty(`description`, description)
 
 const usage = `## Usage\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n`
@@ -51,7 +51,7 @@ iproto.setProperty(`tableofcontents`, tableofcontents)
 const license = `## License\nMIT\n`
 iproto.setProperty(`license`, license)
 
-const installation = `## Installation\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n`
+const installation = `## Installation\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n`
 iproto.setProperty(`installation`, installation)
 
 const tests = [
@@ -81,6 +81,3 @@ iproto.documentBuilder()
 
 module.exports.startFixed = iproto
 
-//let test =  new FixedProto(888,`ABC.md`)
-//console.log(test.getId())
-//module.exports = { UserProto }

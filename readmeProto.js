@@ -16,7 +16,6 @@ const ReadMeProto = function (id) {
     this.tests = []
     this.credits = []
     this.contributing = ``
-
 }
 
 ReadMeProto.prototype.getId = function() {
@@ -36,8 +35,7 @@ ReadMeProto.prototype.handleError = function(error) {
 }
 
 ReadMeProto.prototype.fileAppend = async function(filepath, text, id) {
-    await appendFile(filepath, text, error => {
-        if(error) handleError(error)
+    await appendFile(filepath, text, (error) => {//if(error) throw error //handleError(error)
     })
     return `Append ${id}`;
 }
@@ -46,8 +44,5 @@ ReadMeProto.prototype.fileClear = async function(filepath) {
     await truncate(filepath)
     return `Cleared ${filepath}`
 }
-
-//const test = new ReadMeProto(666)
-//console.log(test.getId())
 
 module.exports = { ReadMeProto }

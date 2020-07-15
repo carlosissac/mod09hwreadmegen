@@ -4,7 +4,7 @@
   "description": "mod09hwreadmegen",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
     "colors": "^1.4.0",
     "inquirer": "^7.3.0",
     "moment": "^2.27.0"
+  },
+  "devDependencies": {
+    "jest": "^26.1.0"
   }
 }
