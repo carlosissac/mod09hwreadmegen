@@ -76,7 +76,7 @@ UserProto.prototype.formatInput = function() {
     let tests = []
     tests.push(`## Tests\n`)
     this.recursiveTests.forEach((element) => {
-        tests.push(`* ${element.tests}\n`)
+        tests.push(`* ${element.tests}\n\n`)
     })
     this.setProperty(`tests`, tests)
 
@@ -105,12 +105,6 @@ UserProto.prototype.validateEditor = function(text) {
         let sp = text.split(`\n`)
         let spl = sp.length-1
         return true
-        /*if (spl < 2) {
-            console.log(` EDITOR :: MUST BE AT LEAST 2 LINES, TRY AGAIN`.brightRed)
-        }
-        else {
-            return true
-        }*/
     }
     else {
         console.log(` EDITOR :: NO INPUT SUBMITTED, TRY AGAIN`.brightRed)
