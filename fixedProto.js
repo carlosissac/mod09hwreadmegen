@@ -27,10 +27,10 @@ const badges = [`![GitHub last commit](https://img.shields.io/github/last-commit
 ];
 iproto.setProperty(`badges`, badges)
 
-const description = `## Description\n\n`
+const description = `## Description\nWhen creating an open source project on GitHub, it is important to have a quality README with information about the app--what is the app for, how to use the app, how to install it, how to report issues, and how to make contributions so that other developers are more likely to use and contribute to the success of the project. A command-line application will allow for quick and easy generation of a project README to get started quickly. This will allow a project creator to spend more time working on finishing the project and less time creating a good README.\n`
 iproto.setProperty(`description`, description)
 
-const usage = `## Usage\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n`
+const usage = `## Usage\nAfter installation is done open index.js and set "select_mode = false;" in order to use Fixed Mode. This has predefined inputs and it should be used for integration testing purposes.\nSet "select_mode = true;" in order use User Mode and let the user submit custom input. Both modes can be executed by running "Node index.js" in terminal.`
 iproto.setProperty(`usage`, usage)
 
 const snapshot = `![image](./assets/vw.jpg)\n`
@@ -51,30 +51,28 @@ iproto.setProperty(`tableofcontents`, tableofcontents)
 const license = `## License\nMIT\n`
 iproto.setProperty(`license`, license)
 
-const installation = `## Installation\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n`
+const installation = `## Installation\n*Step 1.* Clone repo into your localhost\n*Step 2.* Open Terminal and run "npm i --save" in order to install dependencies.\n`
 iproto.setProperty(`installation`, installation)
 
 const tests = [
-    `## Tests\n`,
-    `* Prueba 1\n`,
-    `* Teste 2\n`,
-    `* Prüfung 3\n`,
-    `* Próf 4\n`,
-    `* тест 5\n`
+    `## Tests\nListed below are the testing procedures implemented for this effort.\n`,
+    `* *Test 1.* _readmeProto.test.js and writerProto.test.js Unit Tests._\nTesting for these 2 modules were implemented using Jest unit testing tool library.\nTesting coverage is 100% for all functionality implemented in this module.\nDetails of testing coverage can be audited by looking into in the following file "./coverage/lcov-report/index.html"\n![image](./assets/jest.jpg)\n`,
+    `* *Test 2.* _fixedProto.js Integration Test._\nModule was designed in order to smoke test the implementation of "writerProto.js and readmeProto.js" and to validate the markdown outcome of the readme document.\nValidation for this was not done using Jest.\nModule can be kicked off setting "select_mode = false" in index.js and subsequently doing a "node.js index.js" or using "node.js fixedProto.js" directly in terminal.\nReadMe file output from this file is located in "./README_GENFIX.md"\n`,
+    `* *Test 3.* _userProto.js User Acceptance Test._\nThis module contains the inquierer functionality implemented in order to caputure user input. Module was validated by user manually. ReadMe file output from this file is located in "./README_GENUSER.md"\n`,
+    `* *Test 4.* _index.js. No testing was required for this module._\n`
 ];
 iproto.setProperty(`tests`, tests)
 
 const credits = [
     `## Credits\n`,
-    `* Persona 1\n`,
-    `* Pessoa 2\n`,
-    `* Person 3\n`,
-    `* Personne 4\n`,
-    `* человек 5\n`
+    `* Maryus Martsyalis\n`,
+    `* Colin McPike\n`,
+    `* Beki Gonzalez\n`,
+    `* Heather Stolz\n`
 ];
 iproto.setProperty(`credits`, credits)
 
-const contributing = `## Contributing\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n`
+const contributing = `## Contributing\nIn order to contribute to this project please reach out to project admin at https://github.com/carlosissac in order to cofirm what open tasks could be assigned.\nThis project uses guidelines specified in https://www.contributor-covenant.org/.`
 iproto.setProperty(`contributing`, contributing)
 
 iproto.documentBuilder()

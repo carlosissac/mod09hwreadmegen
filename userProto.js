@@ -1,5 +1,4 @@
 const { WriterProto } = require('./writerProto')
-//const { promisify } = require('util')
 const moment = require('moment')
 const inquirer = require('inquirer')
 const colors = require('colors')
