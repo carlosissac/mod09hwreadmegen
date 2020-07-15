@@ -30,7 +30,7 @@ iproto.setProperty(`badges`, badges)
 const description = `## Description\nWhen creating an open source project on GitHub, it is important to have a quality README with information about the app--what is the app for, how to use the app, how to install it, how to report issues, and how to make contributions so that other developers are more likely to use and contribute to the success of the project. A command-line application will allow for quick and easy generation of a project README to get started quickly. This will allow a project creator to spend more time working on finishing the project and less time creating a good README.\n`
 iproto.setProperty(`description`, description)
 
-const usage = `## Usage\nAfter installation is done open index.js and set "select_mode = false;" in order to use Fixed Mode. This has predefined inputs and it should be used for integration testing purposes.\nSet "select_mode = true;" in order use User Mode and let the user submit custom input. Both modes can be executed by running "Node index.js" in terminal.`
+const usage = `## Usage\nAfter installation is done open index.js and set "select_mode = false;" in order to use Fixed Mode. This has predefined inputs and it should be used for integration testing purposes.\nSet "select_mode = true;" in order use User Mode and let the user submit custom input. Both modes can be executed by running "Node index.js" in terminal.\n`
 iproto.setProperty(`usage`, usage)
 
 const snapshot = `![image](./assets/vw.jpg)\n`
