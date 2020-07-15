@@ -33,7 +33,7 @@ iproto.setProperty(`description`, description)
 const usage = `## Usage\nAfter installation is done open index.js and set "select_mode = false;" in order to use Fixed Mode. This has predefined inputs and it should be used for integration testing purposes.\nSet "select_mode = true;" in order use User Mode and let the user submit custom input. Both modes can be executed by running "Node index.js" in terminal.\n`
 iproto.setProperty(`usage`, usage)
 
-const snapshot = `![image](./assets/vw.jpg)\n`
+const snapshot = `\n![image](./assets/vw.jpg)\n`
 iproto.setProperty(`snapshot`, snapshot)
 
 const tableofcontents = [
