@@ -21,5 +21,5 @@ test(`sets properties and runs documentBuilder`, async () => {
     test.setProperty(`contributing`,`abcdefg\n`)
     const log = jest.spyOn(global.console, `log`)
     await test.documentBuilder()
-    expect(log).toHaveBeenLastCalledWith(`Append contributing`);
+    expect(log).toHaveBeenLastCalledWith('Append contributing');
 })
