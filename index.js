@@ -1,4 +1,4 @@
-let select_mode = false; // false = fixedInput, true = userInput
+let select_mode = true; // false = fixedInput, true = userInput
 
 if(!select_mode) {
     const ifixed = require('./fixedProto');
