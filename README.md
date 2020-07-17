@@ -7,7 +7,7 @@ Target is creating a command line application that dynamically generates a profe
 ## Table.Of.Contents
 * [Description](#Description)
 * [Snapshot](#Snapshot)
-* [Table.Of.Snapshot](#Table.Of.Snapshot)
+* [Table.Of.Contents](#Table.Of.Contents)
 * [User.Story](#User.Story)
 * [Acceptance.Criteria.Checklist](#Acceptance.Criteria.Checklist)
     * [Initial.Requirements](#Initial.Requierements)
