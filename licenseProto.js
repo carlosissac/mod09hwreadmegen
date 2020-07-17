@@ -37,7 +37,7 @@ LicenseProto.prototype.getBadge = function () {
     return this.badge
 }
 
-LicenseProto.prototype.getlink = function () {
+LicenseProto.prototype.getLink = function () {
     
     if(this.type === `Apache License 2.0`) {
         this.link = `https://opensource.org/licenses/Apache-2.0`

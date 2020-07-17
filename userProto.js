@@ -63,7 +63,7 @@ UserProto.prototype.formatInput = function() {
     this.setProperty(`snapshot`, snapshot)
     
     lp = new LicenseProto(`${this.staticInput.license}`)
-    const license = `## License\n*Type:* ${lp.getType()}\n*Description:* ${lp.getDescription()}\n`
+    const license = `## License\n\n*Type:* ${lp.getType()}\n\n*Link:* ${lp.getLink()}\n\n*Description:* ${lp.getDescription()}\n\n`
     this.setProperty(`license`, license)
 
     const installation = `## Installation\n${this.staticInput.installation}`
