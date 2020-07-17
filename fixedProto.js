@@ -23,7 +23,8 @@ const badges = [`![GitHub last commit](https://img.shields.io/github/last-commit
 `![Twitter Follow](https://img.shields.io/twitter/follow/zzzakk_cccrlss?style=social) `,
 `![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/carlosissac/mod09hwreadmegen) `,
 `![GitHub followers](https://img.shields.io/github/followers/carlosissac?style=social) `,
-`[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md) `
+`[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md) `,
+`[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) `,
 ];
 iproto.setProperty(`badges`, badges)
 
@@ -48,14 +49,14 @@ const tableofcontents = [
 ]
 iproto.setProperty(`tableofcontents`, tableofcontents)
 
-const license = `## License\nMIT\n`
+const license = `## License\n* *Type:* MIT\n* *Description:* Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n`
 iproto.setProperty(`license`, license)
 
-const installation = `## Installation\n*Step 1.* Clone repo into your localhost.\n\n*Step 2.* Open Terminal and run "npm i --save" in order to install dependencies.\n\n*Step 3.* Write "node index.js"\n\n*Step 4.* Set "select_mode" to either true or false depending on the mode you want to run.\n`
+const installation = `## Installation\n*Step 1.* Clone repo into your localhost.\n*Step 2.* Open Terminal and run "npm i --save" in order to install dependencies.\n*Step 3.* Write "node index.js"\n*Step 4.* Set "select_mode" to either true or false depending on the mode you want to run.\n`
 iproto.setProperty(`installation`, installation)
 
 const tests = [
-    `## Tests\nListed below are the testing procedures implemented for this effort.\n`,
+    `## Tests\nListed below is the testing strategy followed for this effort:\n`,
     `* *Test 1.* _readmeProto.test.js and writerProto.test.js Unit Tests._\nTesting for these 2 modules were implemented using Jest unit testing tool library.\nTesting coverage is 100% for all functionality implemented in this module.\nDetails of testing coverage can be audited by looking into in the following file "./coverage/lcov-report/index.html"\n![image](./assets/jest.jpg)\n\n`,
     `* *Test 2.* _fixedProto.js Integration Test._\nModule was designed in order to smoke test the implementation of "writerProto.js and readmeProto.js" and to validate the markdown outcome of the readme document.\nValidation for this was not done using Jest.\nModule can be kicked off setting "select_mode = false" in index.js and subsequently doing a "node.js index.js" or using "node.js fixedProto.js" directly in terminal.\nReadMe file output from this file is located in "./README_GENFIX.md"\n\n`,
     `* *Test 3.* _userProto.js User Acceptance Test._\nThis module contains the inquirer functionality implemented in order to capture user input. Module was validated by user manually. ReadMe file output from this file is located in "./README_GENUSER.md"\n\n`,
@@ -72,8 +73,18 @@ const credits = [
 ];
 iproto.setProperty(`credits`, credits)
 
-const contributing = `## Contributing\nIn order to contribute to this project please reach out to project admin at https://github.com/carlosissac in order to confirm what open tasks could be assigned.\nThis project uses guidelines specified in https://www.contributor-covenant.org/.`
+const contributing = `## Contributing\nThis project uses guidelines specified at [Contributor Covenant](https://www.contributor-covenant.org/) and follows open sopurce guidelines for enhancements, additions and improvements.\nAlso please reach out to the project admins for further instructions on pending tasks and how to integrate into our development team.\n`
 iproto.setProperty(`contributing`, contributing)
+
+const questions = [
+    `## Questions\n`,
+    `* Please feel free to contact me at issac@issac.me with any additional questions or comments.\n`,
+    `* Or follow me on [Github](https://github.com/carlosissac).\n`,
+    `* What elements should be included to make a thorough but readable README.me?\n`,
+    `* Does anyone goes through all the info stipulated in the README docs?\n`,
+    `* Does anyone care about this?\n`,
+];
+iproto.setProperty(`questions`, questions)
 
 iproto.documentBuilder()
 

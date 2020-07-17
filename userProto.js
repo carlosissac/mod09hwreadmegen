@@ -75,6 +75,7 @@ UserProto.prototype.formatInput = function() {
 
     let tests = []
     tests.push(`## Tests\n`)
+    tests.push(`Listed below is the testing strategy followed for this effort:`)
     this.recursiveTests.forEach((element) => {
         tests.push(`* ${element.tests}\n\n`)
     })

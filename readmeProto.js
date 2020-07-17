@@ -16,6 +16,9 @@ const ReadMeProto = function (id) {
     this.tests = []
     this.credits = []
     this.contributing = ``
+    this.ghname = ``
+    this.email = ``
+    this.questions = []
 }
 
 ReadMeProto.prototype.getId = function() {

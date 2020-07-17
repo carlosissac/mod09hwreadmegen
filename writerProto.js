@@ -9,7 +9,7 @@ const WriterProto = function(id, filepath) {
 WriterProto.prototype = Object.create(ReadMeProto.prototype)
 
 WriterProto.prototype.documentBuilder = async function() {
-    for(let i=0; i<12; i++) {
+    for(let i=0; i<13; i++) {
         if (i === 0) {
             let promise = await Promise.all([this.fileClear(this.filepath)])
             console.log(String(promise))
@@ -72,6 +72,13 @@ WriterProto.prototype.documentBuilder = async function() {
         else if (i === 11) {
             let promise = await Promise.all([this.fileAppend(this.filepath, this.getProperty(`contributing`), `contributing`)])
             console.log(String(promise))
+        }
+        else if (i === 12) {
+            const questions = this.getProperty(`questions`)
+            for(let o=0; o<questions.length; o++) {
+                let promise = await Promise.all([this.fileAppend(this.filepath, questions[o], `questions`)])
+                console.log(String(promise))
+            }
         }
     }
 }
