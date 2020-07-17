@@ -18,15 +18,15 @@ Target is creating a command line application that dynamically generates a profe
 * [8.Videos](#Videos)
 * [Credits](#Credits)
 * [Contributing](#Contributing)
-## 3. User Story 
+## User.Story 
 AS A developer
 
 I WANT a README generator
 
 SO THAT can quickly create a professional README for a new project
 
-## 4. Acceptance Crietria Checklist
-### 4.1. Initial Requirements
+## Acceptance.Crietria.Checklist
+### Initial.Requirements
 GIVEN a command-line application that accepts user input,
 
 WHEN I am prompted for information about my application repository...
@@ -71,7 +71,7 @@ THEN I am taken to the corresponding section of the README
 
     - Done. Issac.
 
-### 4.2. Minimun Application Requirements Review
+### Minimun.Application.Requirements.Review
 
 Meets specified Submission Requieremnts.
 
@@ -93,7 +93,7 @@ The generated README includes the following sections: Title, Description, Table 
 
     - Includes 2 badges specific to repository, 1) Last Commit and 2) Code Size. Done. Issac.
 
-### 4.3. Submission Requierements Checklist 
+### Submission.Requierements.Checklist 
 
 Because this is a CLI App, there will be no need to deploy it to Heroku. This time, though, you need to include a video showing us that you got the app working with no bugs. You should include a link to the video in your application's README.md file.
 
