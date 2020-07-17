@@ -83,10 +83,12 @@ Functional application.
     - Done. Issac.
 
 GitHub repository with a unique name and a README describing project.
+
     - GitHub Repo > https://github.com/carlosissac/mod09hwreadmegen
+
     - Project Readme > https://github.com/carlosissac/mod09hwreadmegen/blob/master/README.md
 
-The generated README includes the following sections: Title, Description, Table of Contents, Installation, Usage, License, Contributing, Tests, Questions.
+Thegenerated README includes the following sections: Title, Description, Table of Contents, Installation, Usage, License, Contributing, Tests, Questions.
 
     - Done. Issac.
 
