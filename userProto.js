@@ -62,9 +62,8 @@ UserProto.prototype.formatInput = function() {
     const snapshot = `![image](./assets/${this.staticInput.snapshot})\n`
     this.setProperty(`snapshot`, snapshot)
     
-    lp = new LicenseProto(this.staticInput.license)
-    console.log(`LICENSSSSSSEEEEEEE ${lp.getType}`)
-    const license = `## License\n*Type:* ${lp.getType}\n*Description:* ${lp.getDescription}\n`
+    lp = new LicenseProto(`${this.staticInput.license}`)
+    const license = `## License\n*Type:* ${lp.getType()}\n*Description:* ${lp.getDescription()}\n`
     this.setProperty(`license`, license)
 
     const installation = `## Installation\n${this.staticInput.installation}`
@@ -74,7 +73,7 @@ UserProto.prototype.formatInput = function() {
     this.setProperty(`contributing`, contributing)
 
     let badges = []
-    badges.push(`${lp.getBadge}`)
+    badges.push(`${lp.getBadge()}`)
     this.recursiveBadges.forEach((element) => {
         badges.push(`${element.badges} `)
     })
@@ -107,7 +106,7 @@ UserProto.prototype.formatInput = function() {
     questions.push(`* Please feel free to contact me at ${this.staticInput.email} with any additional questions or comments.\n`)
     questions.push(`* Follow me on [Github](https://github.com/${this.staticInput.ghname}).\n`)
     this.recursiveQuestions.forEach((element) => {
-        credits.push(`* ${element.questions}\n`)
+        questions.push(`* ${element.questions}\n`)
     })
     this.setProperty(`questions`, questions)
 
