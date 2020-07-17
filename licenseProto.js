@@ -2,6 +2,7 @@ const LicenseProto = function (type) {
     this.type = type
     this.badge = ``
     this.description = ``
+    this.link = ``
 }
 
 //Source https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
@@ -13,27 +14,53 @@ LicenseProto.prototype.getType = function () {
 LicenseProto.prototype.getBadge = function () {
     
     if(this.type === `Apache License 2.0`) {
-        this.badge = `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) `
+        this.badge = `![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg) ` 
     }
     else if(this.type === `Boost`) {
-        this.badge = `[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt) `
+        this.badge = `![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg) `
     }
     else if(this.type === `BSD 3-Clause License`) {
-        this.badge = `[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause `
+        this.badge = `![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg) `
     }
     else if(this.type === `GNU GPLv3`) {
-        this.badge = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) `
+        this.badge = `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg) `
     }
     else if(this.type === `MIT`) {
-        this.badge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) `
+        this.badge = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) `
     }
     else if(this.type === `ISC`) {
-        this.badge = `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC) `
+        this.badge = `![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg) `
     }
     else if(this.type === `IBM Public License v1.0`) {
-        this.badge = `[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0) `
+        this.badge = `![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg) `
     }
     return this.badge
+}
+
+LicenseProto.prototype.getlink = function () {
+    
+    if(this.type === `Apache License 2.0`) {
+        this.link = `https://opensource.org/licenses/Apache-2.0`
+    }
+    else if(this.type === `Boost`) {
+        this.link = `https://www.boost.org/LICENSE_1_0.txt`
+    }
+    else if(this.type === `BSD 3-Clause License`) {
+        this.link = `https://opensource.org/licenses/BSD-3-Clause`
+    }
+    else if(this.type === `GNU GPLv3`) {
+        this.link = `https://www.gnu.org/licenses/gpl-3.0`
+    }
+    else if(this.type === `MIT`) {
+        this.link = `https://opensource.org/licenses/MIT`
+    }
+    else if(this.type === `ISC`) {
+        this.link = `https://opensource.org/licenses/ISC`
+    }
+    else if(this.type === `IBM Public License v1.0`) {
+        this.link = `https://opensource.org/licenses/IPL-1.0`
+    }
+    return this.link
 }
 
 LicenseProto.prototype.getDescription = function () {

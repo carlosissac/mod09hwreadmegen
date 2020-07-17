@@ -19,12 +19,12 @@ console.log(`ProjectID ${iproto.getId()} :: InputType ${iproto.getType()}`.yello
 const title = `# Project Readme Generator - Fixed Input - Open Source ("ProjectID:${iproto.getId()}")\n`
 iproto.setProperty(`title`, title)
 
-const badges = [`![GitHub last commit](https://img.shields.io/github/last-commit/carlosissac/mod09hwreadmegen) `,
+const badges = [`![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) `, 
+`![GitHub last commit](https://img.shields.io/github/last-commit/carlosissac/mod09hwreadmegen) `,
 `![Twitter Follow](https://img.shields.io/twitter/follow/zzzakk_cccrlss?style=social) `,
 `![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/carlosissac/mod09hwreadmegen) `,
 `![GitHub followers](https://img.shields.io/github/followers/carlosissac?style=social) `,
-`[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md) `,
-`[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) `,
+`[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md) `
 ];
 iproto.setProperty(`badges`, badges)
 
@@ -49,7 +49,7 @@ const tableofcontents = [
 ]
 iproto.setProperty(`tableofcontents`, tableofcontents)
 
-const license = `## License\n*Type:* MIT\n*Description:* Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n`
+const license = `## License\n*Type:* MIT\n*Link:* https://opensource.org/licenses/MIT\n*Description:* Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n`
 iproto.setProperty(`license`, license)
 
 const installation = `## Installation\n*Step 1.* Clone repo into your localhost.\n\n*Step 2.* Open Terminal and run "npm i --save" in order to install dependencies.\n\n*Step 3.* Write "node index.js"\n\n*Step 4.* Set "select_mode" to either true or false depending on the mode you want to run.\n`
