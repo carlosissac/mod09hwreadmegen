@@ -1,31 +1,31 @@
 # 05 Node JS: README Generator
 ![GitHub last commit](https://img.shields.io/github/last-commit/carlosissac/mod09hwreadmegen) ![Twitter Follow](https://img.shields.io/twitter/follow/zzzakk_cccrlss?style=social) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/carlosissac/mod09hwreadmegen) ![GitHub followers](https://img.shields.io/github/followers/carlosissac?style=social) ![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg) 
-## Description.
+## Description
 Target is creating a command line application that dynamically generates a professional README.md from a user's input using Inquirer NPM package, also using a privided documentation as a guideline as to what content does a quality document should have.
-## Snapshot.
+## Snapshot
 ![image](./assets/console.jpg)
-## Table.Of.Contents.
+## Table.Of.Contents
 * [Description](#Description)
 * [Snapshot](#Snapshot)
-* [Table.Of.Contents](#Table.Of.Contents)
-* [User.Story](#User.Story)
-* [Acceptance.Criteria.Checklist](#Acceptance.Criteria.Checklist)
-    * [Initial.Requirements](#Initial.Requierements)
-    * [Minimun.Application.Requirements.Review](#Minimun.Application.Requirements.Review)
-    * [Submission.Requierements.Checklist](#Submission.Requierements.Checklist)
+* [TableOfContents](#TableOfContents)
+* [UserStory](#UserStory)
+* [AcceptanceCriteriaChecklist](#AcceptanceCriteriaChecklist)
+    * [InitialRequirements](#InitialRequierements)
+    * [MinimunApplicationRequirementsReview](#MinimunApplicationRequirementsReview)
+    * [SubmissionRequierementsChecklist](#SubmissionRequierementsChecklist)
 * [6.App.Usage.](#5.App.Usage.)
 * [7.Features](#Features)
 * [8.Videos](#Videos)
 * [Credits](#Credits)
 * [Contributing](#Contributing)
-## User.Story.
+## User.Story
 AS A developer
 
 I WANT a README generator
 
 SO THAT can quickly create a professional README for a new project
 
-## Acceptance.Criteria.Checklist.
+## AcceptanceCriteriaChecklist
 
 ### Initial.Requirements.
 GIVEN a command-line application that accepts user input,
