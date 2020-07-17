@@ -9,26 +9,26 @@ Target is creating a command line application that dynamically generates a profe
 * [Snapshot](#Snapshot)
 * [TableOfContents](#TableOfContents)
 * [UserStory](#UserStory)
-* [AcceptanceCriteriaChecklist](#AcceptanceCriteriaChecklist)
+* [AcceptanceChecklist](#AcceptanceChecklist)
     * [InitialRequirements](#InitialRequierements)
-    * [MinimunApplicationRequirementsReview](#MinimunApplicationRequirementsReview)
-    * [SubmissionRequierementsChecklist](#SubmissionRequierementsChecklist)
-* [6.App.Usage.](#5.App.Usage.)
-* [7.Features](#Features)
-* [8.Videos](#Videos)
+    * [ApplicationRequirements](#ApplicationRequirements)
+    * [SubmissionRequierements](#SubmissionRequierements)
+* [AppUsage](#AppUsage)
+* [Features](#Features)
+* [VideoWalkthrough](#VideoWalkthrough)
 * [Credits](#Credits)
 * [Contributing](#Contributing)
-## User.Story
+## UserStory
 AS A developer
 
 I WANT a README generator
 
 SO THAT can quickly create a professional README for a new project
 
-## AcceptanceCriteriaChecklist
+## AcceptanceChecklist
 
 ### InitialRequirements
-GIVEN a command-line application that accepts user input,
+GIVEN a command-line application that accepts user input...
 
 WHEN I am prompted for information about my application repository...
 
@@ -72,7 +72,7 @@ THEN I am taken to the corresponding section of the README
 
     - Done. Issac.
 
-### MinimunApplicationRequirementsReview
+### ApplicationRequirements
 
 Meets specified Submission Requieremnts.
 
@@ -88,7 +88,7 @@ GitHub repository with a unique name and a README describing project.
 
     - Project Readme > https://github.com/carlosissac/mod09hwreadmegen/blob/master/README.md
 
-Thegenerated README includes the following sections: Title, Description, Table of Contents, Installation, Usage, License, Contributing, Tests, Questions.
+Generated README includes the following sections: Title, Description, Table of Contents, Installation, Usage, License, Contributing, Tests, Questions.
 
     - Done. Issac.
 
@@ -96,7 +96,7 @@ Thegenerated README includes the following sections: Title, Description, Table o
 
     - Includes 2 badges specific to repository, 1) Last Commit and 2) Code Size. Done. Issac.
 
-### SubmissionRequierementsChecklist
+### SubmissionRequierements
 
 Because this is a CLI App, there will be no need to deploy it to Heroku. This time, though, you need to include a video showing us that you got the app working with no bugs. You should include a link to the video in your application's README.md file.
 
@@ -108,7 +108,7 @@ Create a .gitignore file and include node_modules/ and .DS_Store/.
 
 node_modules is not tracked and uploaded to GitHub.
 
-    - node_modules folder is not being tracked in our repo. Done. Issac
+    - node_modules folder is not being tracked in our repo and listed in .gitignore file. Done. Issac
 
 Repo must include package.json with required dependencies.
 
