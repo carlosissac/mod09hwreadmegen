@@ -1,4 +1,4 @@
-# Project Readme Generator - Fixed Input - Open Source ("ProjectID:1594964277037")
+# Project Readme Generator - Fixed Input - Open Source ("ProjectID:1594964352232")
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/carlosissac/mod09hwreadmegen) ![Twitter Follow](https://img.shields.io/twitter/follow/zzzakk_cccrlss?style=social) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/carlosissac/mod09hwreadmegen) ![GitHub followers](https://img.shields.io/github/followers/carlosissac?style=social) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md) 
 ## Description
 When creating an open source project on GitHub, it is important to have a quality README with information about the app--what is the app for, how to use the app, how to install it, how to report issues, and how to make contributions so that other developers are more likely to use and contribute to the success of the project. A command-line application will allow for quick and easy generation of a project README to get started quickly. This will allow a project creator to spend more time working on finishing the project and less time creating a good README.
@@ -36,8 +36,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 *Step 4.* Set "select_mode" to either true or false depending on the mode you want to run.
 ## Tests
 Listed below is the testing strategy followed for this effort:
-* *Test 1.* _readmeProto.test.js and writerProto.test.js Unit Tests._
-Testing for these 2 modules were implemented using Jest unit testing tool library.
+* *Test 1.* _readmeProto.test.js, writerProto.test.js and licenseProto Unit Tests._
+Testing for these 3 modules were implemented using Jest unit testing tool library.
 Testing coverage is 100% for all functionality implemented in this module.
 Details of testing coverage can be audited by looking into in the following file "./coverage/lcov-report/index.html"
 ![image](./assets/jest.jpg)
