@@ -27,7 +27,7 @@ SO THAT can quickly create a professional README for a new project
 
 ## AcceptanceCriteriaChecklist
 
-### Initial.Requirements.
+### InitialRequirements
 GIVEN a command-line application that accepts user input,
 
 WHEN I am prompted for information about my application repository...
@@ -72,7 +72,7 @@ THEN I am taken to the corresponding section of the README
 
     - Done. Issac.
 
-### Minimun.Application.Requirements.Review.
+### MinimunApplicationRequirementsReview
 
 Meets specified Submission Requieremnts.
 
@@ -94,7 +94,7 @@ The generated README includes the following sections: Title, Description, Table 
 
     - Includes 2 badges specific to repository, 1) Last Commit and 2) Code Size. Done. Issac.
 
-### Submission.Requierements.Checklist.
+### SubmissionRequierementsChecklist
 
 Because this is a CLI App, there will be no need to deploy it to Heroku. This time, though, you need to include a video showing us that you got the app working with no bugs. You should include a link to the video in your application's README.md file.
 
