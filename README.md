@@ -27,27 +27,49 @@ SO THAT can quickly create a professional README for a new project
 ## 4. Acceptance Crietria Checklist
 ### 4.1. Initial Requirements
 GIVEN a command-line application that accepts user input,
+
 WHEN I am prompted for information about my application repository...
+
 THEN a quality, professional README.md is generated with the title of your project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions.
+
     - *All of sections specified are required to be submitted by the user. Issac*
+
 WHEN I enter my project title...
-THEN this is displayed as the title of the README
+
+THEN this is displayed as the title of the README.
+
     - *Done. Issac.*
+
 WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions...
+
 THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests.
+
     - *Done. Issac.*
+
 WHEN I choose a license for my application from a list of options...
-THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under  
+
+THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under.
+
     - *Done. Issac.*
+
 WHEN I enter my GitHub username...
-THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
+
+THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile.
+
     - *Done. Issac.*
+
 WHEN I enter my email address...
+
 THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions.
+
     - *Done. Issac.*
+
 WHEN I click on the links in the Table of Contents...
+
 THEN I am taken to the corresponding section of the README
+
     - *Done. Issac*
+
 ### 4.2. Minimun Application Requirements Review
 * Meets specified Submission Requieremnts.
     - *Requierements are reviewed and checklisted in the following section. Done. Issac.*
