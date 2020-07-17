@@ -1,18 +1,18 @@
 # 05 Node JS: README Generator
 ![GitHub last commit](https://img.shields.io/github/last-commit/carlosissac/mod09hwreadmegen) ![Twitter Follow](https://img.shields.io/twitter/follow/zzzakk_cccrlss?style=social) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/carlosissac/mod09hwreadmegen) ![GitHub followers](https://img.shields.io/github/followers/carlosissac?style=social) ![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg) 
-## 1.Description
+## Description
 Target is creating a command line application that dynamically generates a professional README.md from a user's input using Inquirer NPM package, also using a privided documentation as a guideline as to what content does a quality document should have.
-## 2.Snapshot
+## Snapshot
 ![image](./assets/console.jpg)
-## 3.Table.Of.Contents
-* [1.Description](#1.Description)
-* [2.Snapshot](#2.Snapshot)
-* [3.Table.Of.Snapshot](#3.Table.Of.Snapshot)
-* [4.User.Story](#4.User.Story)
-* [5.Acceptance.Criteria.Checklist](#5.Acceptance.Criteria.Checklist)
-    * [5.1.Initial.Requirements](#5.1.Initial.Requierements)
-    * [5.2.Minimun.Application.Requirements.Review](#5.2.Minimun.Application.Requirements.Review)
-    * [5.3.Submission.Requierements.Checklist](#5.3.Submission.Requierements.Checklist)
+## Table.Of.Contents
+* [Description](#Description)
+* [Snapshot](#Snapshot)
+* [Table.Of.Snapshot](#Table.Of.Snapshot)
+* [User.Story](#User.Story)
+* [Acceptance.Criteria.Checklist](#Acceptance.Criteria.Checklist)
+    * [Initial.Requirements](#Initial.Requierements)
+    * [Minimun.Application.Requirements.Review](#Minimun.Application.Requirements.Review)
+    * [Submission.Requierements.Checklist](#Submission.Requierements.Checklist)
 * [6.App.Usage](#5.App.Usage)
 * [7.Features](#Features)
 * [8.Videos](#Videos)
