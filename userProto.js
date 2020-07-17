@@ -1,4 +1,5 @@
 const { WriterProto } = require('./writerProto')
+const { LicenseProto } = require('./licenseProto')
 const moment = require('moment')
 const inquirer = require('inquirer')
 const colors = require('colors')
@@ -11,6 +12,7 @@ const UserProto = function(id, filepath, type) {
     this.recursiveTableOfContents = []
     this.recursiveTests = []
     this.recursiveCredits = []
+    this.recursiveQuestions = []
 
     this.usr_targProp = ``
     this.real_tarProp = ``
@@ -21,6 +23,9 @@ const UserProto = function(id, filepath, type) {
     this.rec_propmts = []
     this.rec_lock = 0
     this.exec_lock = 0
+
+    this.licenseBadge = ``
+    this.licenseDesc = ``
 }
 
 UserProto.prototype = Object.create(WriterProto.prototype)
@@ -42,6 +47,12 @@ UserProto.prototype.formatInput = function() {
     const title = `# Project ${this.staticInput.title} - Open Source ("ProjectID:${this.getId()}")\n` 
     this.setProperty(`title`, title)
 
+    const email = `${this.staticInput.email}`
+    this.setProperty(`email`, email)
+
+    const ghname = `${this.staticInput.ghname}`
+    this.setProperty(`ghname`, ghname)
+
     const description = `## Description\n${this.staticInput.description}`
     this.setProperty(`description`, description)
     
@@ -51,7 +62,9 @@ UserProto.prototype.formatInput = function() {
     const snapshot = `![image](./assets/${this.staticInput.snapshot})\n`
     this.setProperty(`snapshot`, snapshot)
     
-    const license = `## License\n${this.staticInput.license}\n`
+    lp = new LicenseProto(this.staticInput.license)
+    console.log(`LICENSSSSSSEEEEEEE ${lp.getType}`)
+    const license = `## License\n*Type:* ${lp.getType}\n*Description:* ${lp.getDescription}\n`
     this.setProperty(`license`, license)
 
     const installation = `## Installation\n${this.staticInput.installation}`
@@ -61,6 +74,7 @@ UserProto.prototype.formatInput = function() {
     this.setProperty(`contributing`, contributing)
 
     let badges = []
+    badges.push(`${lp.getBadge}`)
     this.recursiveBadges.forEach((element) => {
         badges.push(`${element.badges} `)
     })
@@ -88,6 +102,15 @@ UserProto.prototype.formatInput = function() {
     })
     this.setProperty(`credits`, credits)
 
+    let questions = []
+    questions.push(`## Questions\n`)
+    questions.push(`* Please feel free to contact me at ${this.staticInput.email} with any additional questions or comments.\n`)
+    questions.push(`* Follow me on [Github](https://github.com/${this.staticInput.ghname}).\n`)
+    this.recursiveQuestions.forEach((element) => {
+        credits.push(`* ${element.questions}\n`)
+    })
+    this.setProperty(`questions`, questions)
+
     this.exec_lock++
     this.captureExec()
 }
@@ -112,12 +135,25 @@ UserProto.prototype.validateEditor = function(text) {
     }
 }
 
+
 UserProto.prototype.getStaticInput = async function() {
     this.staticInput = await inquirer.prompt([
         {
             type : `input`,
             name : `title`,
             message : `TITLE`.yellow,
+            validate : this.validateInput
+        },
+        {
+            type : `input`,
+            name : `email`,
+            message : `EMAIL`.yellow,
+            validate : this.validateInput
+        },
+        {
+            type : `input`,
+            name : `ghname`,
+            message : `GITHUB NAME`.yellow,
             validate : this.validateInput
         },
         {
@@ -142,7 +178,7 @@ UserProto.prototype.getStaticInput = async function() {
             type: `list`,
             name: `license`,
             message: `LICENSE`.yellow,
-            choices: [`Apache License 2.0`, `GNU GPLv3`, `MIT`, `ISC`, `GNU GPLv2`],
+            choices: [`Apache License 2.0`,`Boost Software License 1.0`,`BSD 3-Clause License`,`GNU GPLv3`, `MIT`, `ISC`, `IBM Public License v1.0`]
         },        
         {
             type: `editor`,
@@ -209,6 +245,10 @@ UserProto.prototype.recursiveExec = function() {
     }
     else if (this.rec_lock === 3) {
         this.recursiveSetup(`recursiveCredits`)
+        this.recursiveCapture()
+    }
+    else if (this.rec_lock === 4) {
+        this.recursiveSetup(`recursiveQuestions`)
         this.recursiveCapture()
     }
     else {

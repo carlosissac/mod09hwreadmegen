@@ -79,7 +79,7 @@ iproto.setProperty(`contributing`, contributing)
 const questions = [
     `## Questions\n`,
     `* Please feel free to contact me at issac@issac.me with any additional questions or comments.\n`,
-    `* Or follow me on [Github](https://github.com/carlosissac).\n`,
+    `* Follow me on [Github](https://github.com/carlosissac).\n`,
     `* What elements should be included to make a thorough but readable README.me?\n`,
     `* Does anyone goes through all the info stipulated in the README docs?\n`,
     `* Does anyone care about this?\n`,
