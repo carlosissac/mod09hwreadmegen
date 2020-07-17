@@ -1,10 +1,16 @@
 # 05 Node JS: README Generator
 ![GitHub last commit](https://img.shields.io/github/last-commit/carlosissac/mod09hwreadmegen) ![Twitter Follow](https://img.shields.io/twitter/follow/zzzakk_cccrlss?style=social) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/carlosissac/mod09hwreadmegen) ![GitHub followers](https://img.shields.io/github/followers/carlosissac?style=social) ![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg) 
+
 ## Description
+
 Target is creating a command line application that dynamically generates a professional README.md from a user's input using Inquirer NPM package, also using a privided documentation as a guideline as to what content does a quality document should have.
+
 ## Snapshot
+
 ![image](./assets/console.jpg)
+
 ## Table.Of.Contents
+
 * [Description](#Description)
 * [Snapshot](#Snapshot)
 * [TableOfContents](#TableOfContents)
@@ -19,9 +25,9 @@ Target is creating a command line application that dynamically generates a profe
     * [Operation](#Operation)
 * [Features](#Features)
 * [VideoWalkthrough](#VideoWalkthrough)
-* [Credits](#Credits)
-* [Contributing](#Contributing)
+
 ## UserStory
+
 AS A developer
 
 I WANT a README generator
@@ -147,9 +153,9 @@ Because screenshots (and well-written READMEs) are extremely important in the co
 
 *Step 2.* Make sure that the following flag is set to True.
 
-### Operation 
-
 ![image](./assets/config01.jpg)
+
+### Operation 
 
 *Step 1.* Go to Terminal and run index.js.
 
@@ -174,3 +180,33 @@ Because screenshots (and well-written READMEs) are extremely important in the co
 *Step 6.* Write text content. After you are done press "ESC" key and ":wq!" 
 
 ![image](./assets/config07.jpg)
+
+## Features
+
+* *Editor capture.* When some of the README sections require large amounts of texts user is taken to VIM editor for a better text capture.
+
+![image](./assets/config05.jpg)
+
+* *List option.* When prompted for license type we are asked to select from a list of options.
+
+![image](./assets/features02.jpg)
+
+* *Recursive capture.* After static input is captured the user will be propmpted for several items in a recursive manner. By this we mean that the user will be prompted for items until the user decides to move on.
+
+![image](./assets/features03.jpg)
+
+* *Fixed Input Mode.*. This mode was developed in order to do an integration test beween the ReadMe, Writer and Fixed moduled, and also in order to test the markdown document fornat.
+
+* *Jest Unit testing.* ReadMe, Writer and License proto were unit tested using JEST. These tests are coded the the files ending in ".test.js". Unit test results are stored in "coverage/lcov-report/index.html" file, currently not tracked using GitHub.
+
+![image](./assets/jest.jpg)
+
+## VideoWalkthorugh
+
+The following links provide a video walkkthoroughs explaining the development desicions made for this project and a walkthorugh of the usage of the app. Also provided is a slide deck for the explanation video
+
+* Explanation > 
+
+* PowerPoint Deck >
+
+* Walkthorugh > 
