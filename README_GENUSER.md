@@ -33,7 +33,7 @@ After installation is done open index.js and set "select_mode = false;" in order
 *Step 4.* Set "select_mode" to either true or false depending on the mode you want to run.
 
 ## Tests
-Listed below is the testing strategy followed for this effort:* *Test 1.* _readmeProto.test.js and writerProto.test.js Unit Tests._ Testing for these 2 modules were implemented using Jest unit testing tool library. Testing coverage is 100% for all functionality implemented in this module. Details of testing coverage can be audited by looking into in the following file "./coverage/lcov-report/index.html" ![image](./assets/jest.jpg)
+Listed below is the testing strategy followed for this effort:* *Test 1.* _readmeProto.test.js, writerProto.test.js and licenseProto.test.js Unit Tests._ Testing for these 2 modules were implemented using Jest unit testing tool library. Testing coverage is 100% for all functionality implemented in this module. Details of testing coverage can be audited by looking into in the following file "./coverage/lcov-report/index.html" ![image](./assets/jest.jpg)
 
 * *Test 2.* _fixedProto.js Integration Test._\nModule was designed in order to smoke test the implementation of "writerProto.js and readmeProto.js" and to validate the markdown outcome of the readme document.\nValidation for this was not done using Jest.\nModule can be kicked off setting "select_mode = false" in index.js and subsequently doing a "node.js index.js" or using "node.js fixedProto.js" directly in terminal.\nReadMe file output from this file is located in "./README_GENFIX.md"
 
