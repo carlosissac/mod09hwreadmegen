@@ -23,6 +23,7 @@ Target is creating a command line application that dynamically generates a profe
     * [Instalattion](#Instalattion)
     * [Configuration](#Configuration)
     * [Operation](#Operation)
+    * [Output](#Output)
 * [Features](#Features)
 * [VideoWalkthrough](#VideoWalkthrough)
 
@@ -181,6 +182,12 @@ Because screenshots (and well-written READMEs) are extremely important in the co
 
 ![image](./assets/config07.jpg)
 
+### Output 
+
+* When running on Fixed mode we output to [README_GENFIX.md](https://github.com/carlosissac/mod09hwreadmegen/blob/master/README_GENFIX.md)
+
+* While running on User mode we output to [README_GENUSER.md](https://github.com/carlosissac/mod09hwreadmegen/blob/master/README_GENUSER.md)
+
 ## Features
 
 * *Editor capture.* When some of the README sections require large amounts of texts user is taken to VIM editor for a better text capture.
@@ -205,8 +212,8 @@ Because screenshots (and well-written READMEs) are extremely important in the co
 
 The following links provide a video walkkthoroughs explaining the development desicions made for this project and a walkthorugh of the usage of the app. Also provided is a slide deck for the explanation video
 
-* Explanation > 
+* [Video Intro](https://youtu.be/RzNnGMWdHG8)
 
-* Slide Deck >
+* [Slides](https://docs.google.com/presentation/d/1u0N-WSlIxcli8ZZkuJ8BqCimpyQfpO8YdvkVslMIwvc/edit?usp=sharing)
 
-* Walkthorugh > 
+* [Video Demo](https://youtu.be/jxbjp4-x-zY)
