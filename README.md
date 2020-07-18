@@ -9,7 +9,7 @@ Target is creating a command line application that dynamically generates a profe
 
 ![image](./assets/console.jpg)
 
-## Table.Of.Contents
+## TableOfContents
 
 * [Description](#Description)
 * [Snapshot](#Snapshot)
@@ -207,6 +207,6 @@ The following links provide a video walkkthoroughs explaining the development de
 
 * Explanation > 
 
-* PowerPoint Deck >
+* Slide Deck >
 
 * Walkthorugh > 
