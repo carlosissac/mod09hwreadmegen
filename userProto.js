@@ -134,7 +134,6 @@ UserProto.prototype.validateEditor = function(text) {
     }
 }
 
-
 UserProto.prototype.getStaticInput = async function() {
     this.staticInput = await inquirer.prompt([
         {
